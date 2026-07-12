@@ -10,4 +10,4 @@ function findLargest(nums){
         return largest;
 }
 
-console.log(findLargest(nums))
+console.log(findLargest(nums));
