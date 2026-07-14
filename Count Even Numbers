@@ -1,1 +1,13 @@
+let nums = [3, 4, 10, 24, 28, 44, 48, 50];
 
+function countEven(nums){
+  let count =0; 
+    for(let i=0; i<nums.length; i++){
+        if(nums[i] % 2 ===0){
+            count++; 
+        }
+    }
+        return count;
+}
+
+console.log(countEven(nums));
