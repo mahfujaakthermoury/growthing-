@@ -1,4 +1,12 @@
 let nums = [6, 10, 15, 20, 25, 30];
 
-function (nums){
+function sumOfAll(nums){
+    let sum =0;
+    for(let i=0; i<nums.length; i++){
+        sum += nums[i];
+      
+    }
+return sum;
 }
+
+console.log(sumOfAll(nums));
