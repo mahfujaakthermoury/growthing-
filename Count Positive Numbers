@@ -1,0 +1,13 @@
+let nums = [5, -2, 7, 10, 0, -56, -32, 90];
+
+function countPositive(nums){
+    let count = 0;
+    for(let i=0; i<nums.length; i++){
+        if(nums[i]>0){
+            count++;
+        }
+    }
+        return count;
+}
+
+console.log(countPositive(nums));
