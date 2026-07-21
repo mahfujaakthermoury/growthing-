@@ -1,1 +1,15 @@
+let data = [1, 3, 5, 7, 54, 6, 4, 6, 34, 5, 3, 465, 45, 34, 5, 45];
 
+function removeDuplicate() {
+    let newData = [];
+
+    for (let i = 0; i < data.length; i++) {
+        if (!newData.includes(data[i])) {
+            newData.push(data[i]);
+        }
+    }
+
+    return newData;
+}
+
+console.log(removeDuplicate());
