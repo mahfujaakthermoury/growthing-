@@ -1,1 +1,15 @@
+let wordArr =["cat", "elephant", "dog", "tiger"];
 
+function longestWord(wordArr){
+      let longest = wordArr[0];
+
+  for(let i=0; i<wordArr.length; i++){
+
+      if(wordArr[i].length > longest.length){
+        longest = wordArr[i];
+      }
+  }
+      return longest;
+}
+
+console.log(longestWord(wordArr));
