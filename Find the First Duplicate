@@ -6,8 +6,8 @@ function firstDuplicate(arr) {
 
     for (let j = i + 1; j < arr.length; j++) {
 
-       if(arr[i] === arr[j] && !include.duplicate){
-          push.duplicate;
+       if(arr[i] === arr[j] && !duplicate.include()arr[i]){
+          duplicate.push(arr[i]);
        } // compare arr[i] and arr[j]
 
     }
