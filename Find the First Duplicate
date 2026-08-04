@@ -1,18 +1,16 @@
 let arr = [4, 66, 4, 2, 6, 3, 6, 5];
 
 function firstDuplicate(arr) {
-    let duplicate = [];
     for (let i = 0; i < arr.length; i++) {
 
-    for (let j = i + 1; j < arr.length; j++) {
+    for (let j = 0; j < i; j++) {
 
-       if(arr[i] === arr[j] && !duplicate.include()arr[i]){
-          duplicate.push(arr[i]);
+       if(arr[i] === arr[j]){
+          return arr[i]
        } // compare arr[i] and arr[j]
 
     }
   }
-rerturn duplicate;
 }
 
 console.log(firstDuplicate([5, 3, 7, 3, 2, 5]));
