@@ -1,1 +1,27 @@
 
+let arr =[2, 4, 2, 6, 2, 8];
+
+function mostFrequent(arr) {
+
+    let mostNum= arr[0];
+    let highestCount= 0;
+
+    for(let i=0; i<arr.length; i++){
+
+      let count = 0;
+
+       for(let j=0; j<arr.length; j++){
+
+        if(arr[i] === arr[j]){
+          count++;
+        }
+      }
+        if(count > highestCount){
+          highestCount = count;
+          mostNum = arr[i];
+        }
+    }
+      return mostNum;
+}
+
+console.log(mostFrequent(arr));
