@@ -7,7 +7,8 @@ function mostFrequent(arr) {
     let highestCount= 0;
 
     for(let i=0; i<arr.length; i++){
-
+    
+    // Count how many times the current number appears
       let count = 0;
 
        for(let j=0; j<arr.length; j++){
@@ -16,6 +17,8 @@ function mostFrequent(arr) {
           count++;
         }
       }
+
+        // If this number appears more times than the previous highest
         if(count > highestCount){
           highestCount = count;
           mostNum = arr[i];
